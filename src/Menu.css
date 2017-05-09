@@ -1,0 +1,49 @@
+.menu {
+    margin: 2em auto 2em auto;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;  
+}
+
+.menu ul li {
+    display: inline;
+    width: 35%;
+    padding: 0 10% 0 10%;
+    cursor: pointer;   
+    font-weight: bolder;
+    white-space: nowrap;
+    text-shadow:  0 0 .01em rgba(64, 64, 64, 0.2);
+}
+
+.menu ul li.new {
+   color: rgba(125, 0, 0, 0.3);
+}
+
+.menu ul li.settings {
+   color: rgba(0, 125, 0, 0.3);
+}
+
+.menu ul li.rules {
+   color: rgba(0, 0, 125, 0.3);
+}
+
+.menu ul li.new:hover {
+   background-color: rgba(125, 0, 0, 0.3);
+   color: #fff;
+}
+
+.menu ul li.settings:hover {
+   background-color: rgba(0, 125, 0, 0.3);
+   color: #fff;
+}
+
+.menu ul li.rules:hover {
+   background-color: rgba(0, 0, 125, 0.3);
+   color: #fff;
+}

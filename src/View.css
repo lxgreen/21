@@ -1,0 +1,66 @@
+.tile {
+    width: 33.333%;
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;   
+}
+
+.view-component {
+    width: 300%;
+    float: left;
+    height: 100%;   
+}
+
+.left-to-middle {
+  animation: left-to-middle-kf 0.5s both;
+}
+
+.right-to-middle {
+  animation: right-to-middle-kf 0.5s both;
+}
+
+.middle-to-right {
+  animation: middle-to-right-kf 0.5s both;
+}
+
+.middle-to-left {
+  animation: middle-to-left-kf 0.5s both;
+}
+
+.left-to-right {
+  animation: left-to-right-kf 1s both;
+}
+
+.right-to-left {
+  animation: right-to-left-kf 1s both;
+}
+
+@keyframes left-to-middle-kf {
+  from { transform: translate3d(0%, 0, 0); }
+  to { transform: translate3d(-33.333%, 0, 0); }
+}
+
+@keyframes right-to-middle-kf {
+  from { transform: translate3d(-66.666%, 0, 0); }
+  to { transform: translate3d(-33.333%, 0, 0); }
+}
+
+@keyframes middle-to-right-kf {
+  from { transform: translate3d(-33.333%, 0, 0); }
+  to { transform: translate3d(-66.666%, 0, 0); }
+}
+
+@keyframes middle-to-left-kf {
+  from { transform: translate3d(-33.333%, 0, 0); }
+  to { transform: translate3d(0%, 0, 0); }
+}
+
+@keyframes left-to-right-kf {
+  from { transform: translate3d(0%, 0, 0); }
+  to { transform: translate3d(-66.666%, 0, 0); }
+}
+
+@keyframes right-to-left-kf {
+  from { transform: translate3d(-66.666%, 0, 0); }
+  to { transform: translate3d(0%, 0, 0); }
+}
